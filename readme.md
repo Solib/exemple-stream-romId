@@ -1,7 +1,7 @@
 # Multiplayer Example stream room
 
 ##File structure
-* ige	(clone https://github.com/coolbloke1324/ige/tree/dev)
+* ige	(clone git /ige-dev)
 * assets (copy /ige-dev/examples/assets )
 * game (this is repo)
 	
