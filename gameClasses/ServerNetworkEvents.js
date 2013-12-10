@@ -41,18 +41,6 @@ var ServerNetworkEvents = {
 			}
 
 			
-			//////////////////////////////////////////////////////////////////
-			ige.server.roomScene = new IgeScene2d()
-							.streamRoomId(playerroom);
-						
-
-						//room
-						ige.server.roomScene
-							.streamMode(1)
-							.mount(ige.server.mainScene)
-							.compositeStream(true);
-
-			
 			ige.server.players[clientId] = new CharacterContainer(clientId)
 				.addComponent(PlayerComponent)
 				//.streamMode(1)

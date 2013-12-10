@@ -19,7 +19,7 @@ var Server = IgeClass.extend({
 		this.countplayers = 0;
 		
 		this.room = '';
-		this.roomScene = '';
+		//this.roomScene = '';
 		
 		// Define an array to hold our tile data
 		this.tileData = [];
@@ -69,7 +69,14 @@ var Server = IgeClass.extend({
 						
 						console.log('room start server:', self.room);
 						
-						var allroom = new Array('room1','room2')
+						//var allroom = new Array('room1','room2')
+
+                        var room = new IgeScene2d()
+                            .streamRoomId('room1');
+
+                        room
+                            .streamMode(1)
+                            .compositeStream(true);
 
 
 
